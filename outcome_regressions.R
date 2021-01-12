@@ -79,7 +79,7 @@ H4_robust <- lm(tox_at ~ treatment_dummy + tox_bt, input_robust)
 
 summary(H4)$r.squared/summary(H4_robust)$r.squared
 
-# check if treatment effects different in sub categories of treatment
+# check if treatment effects different in sub categories of treatment (small sample size!)
 
 H1_subgroup_treatment <- lm(HS_at ~ treatment + HS_bt, input)
 
